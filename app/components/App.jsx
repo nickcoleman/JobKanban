@@ -43,6 +43,11 @@ class App extends Component {
       notes:[...this.state.notes, note]
     });
   }
+
+  onDelete = () => {
+    console.log('onDelete clicked');
+  }
+
 }
 
 export default App;
