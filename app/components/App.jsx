@@ -27,7 +27,7 @@ class App extends Component {
     return (
       <div>
         <button onClick={this.addNote}>+</button>
-        <Notes notes={notes} />
+        <Notes notes={notes} onDelete={this.deleteNote} />
       </div>
     );
   }
@@ -43,6 +43,16 @@ class App extends Component {
       notes:[...this.state.notes, note]
     });
   }
+
+  deleteNote = (id, event) => {
+    console.log('onDelete clicked');
+    event.stopPropagation();
+    this.setState({
+      ...this.state,
+      notes: this.state.notes.filter(note => note.id !== id)
+    })
+  }
+
 }
 
 export default App;
