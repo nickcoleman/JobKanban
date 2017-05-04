@@ -1,8 +1,8 @@
 {
-  "name": "Job Search Kanban",
+  "name": "job-kanban",
   "private": true,
   "version": "2.5.6",
-  "description": "Job Search Kanban",
+  "description": "Job Kanban - An Agile approach to your job search",
   "scripts": {
     "stats": "webpack --profile --json > stats.json",
     "start": "webpack-dev-server",
