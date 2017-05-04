@@ -1,6 +1,4 @@
-# react-boilerplate - Boilerplate for "SurviveJS - React"
-
-See [SurviveJS - React](http://survivejs.com/react/introduction/) for the book.
+# Job Kanban - An Agile approach to your job search
 
 ## Getting Started
 
@@ -13,9 +11,9 @@ See [SurviveJS - React](http://survivejs.com/react/introduction/) for the book.
 
 Beyond development, the boilerplate supports other tasks listed below:
 
-* `npm run build` - Generates a production build below `build/`. See the [Building with Webpack](http://survivejs.com/webpack/building-with-webpack/) part for more.
+* `npm run build` - Generates a production build below `build/`.
 * `npm run deploy` - Deploys the contents of the `build/` directory below the **gh-pages** branch.
 * `npm run test` - Runs `tests/` through Karma/Phantom/Mocha once.
 * `npm run test:tdd` - Runs `tests/` in a TDD mode (watches for changes and rebuilds).
 * `npm run test:lint` - Runs code through ESLint to spot code quality issues.
-* `npm run stats` - Generates Webpack build statistics. See the [Analyzing Build Statistics](http://survivejs.com/webpack/building-with-webpack/analyzing-build-statistics/) chapter.
+* `npm run stats` - Generates Webpack build statistics.
