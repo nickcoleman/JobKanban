@@ -1,11 +1,10 @@
 import React from 'react';
 
-
-export default ({task, onDelete}) => (
+const Note = ({task, onDelete}) => (
   <div>
     <span>{task}</span>
     <button onClick={onDelete}>x</button>
   </div>
 );
 
-// export default Note;
+export default Note;
