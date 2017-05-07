@@ -3,7 +3,6 @@ import LaneActions from '../actions/LaneActions';
 export default class LaneStore {
   constructor() {
     this.bindActions(LaneActions);
-
     this.lanes = [];
   }
 
@@ -44,4 +43,16 @@ export default class LaneStore {
     });
   }
 
+  update(updatedLane) {
+    this.setState({
+      lanes: this.lanes.map(lane => {
+        if(lane.id === updatedLane.id) {
+          return Object.assign({}, lane, updatedLane);
+        }
+
+        return lane;
+      })
+    });
+  }
+    
 }
